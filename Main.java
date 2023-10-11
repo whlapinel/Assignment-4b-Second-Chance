@@ -32,10 +32,10 @@ public class Main {
         int hitCount = 0;
         int failCount = 0;
 
-        showRoom.put('d', 0);
-        showRoom.put('c', 0);
-        showRoom.put('b', 0);
-        showRoom.put('a', 0);
+        showRoom.put('D', 0);
+        showRoom.put('C', 0);
+        showRoom.put('B', 0);
+        showRoom.put('A', 0);
 
         Scanner requestReader;
         try {
