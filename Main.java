@@ -31,6 +31,7 @@ public class Main {
         boolean bumped;
         int hitCount = 0;
         int failCount = 0;
+        int requestNo = 0;
 
         showRoom.put('D', 0);
         showRoom.put('C', 0);
@@ -44,7 +45,10 @@ public class Main {
             throw new RuntimeException(e);
         }
         while (requestReader.hasNextInt()) {
-            System.out.println("getting customer request...");
+            System.out.println();
+            System.out.println();
+            ++requestNo;
+            System.out.printf("getting customer request #%d...\n", requestNo);
 
             int request = requestReader.nextInt();
             System.out.println("request: model " + request);
